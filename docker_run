@@ -1,0 +1,4 @@
+docker run -p 5432:5432 --name postgres_customer -e POSTGRES_PASSWORD=nopass -e POSTGRES_DB=customer -d postgres --max_prepared_transactions=100
+docker run -p 5433:5432 --name postgres_shop -e POSTGRES_PASSWORD=nopass -e POSTGRES_DB=shop -d postgres --max_prepared_transactions=100
+docker run -p 5434:5432 --name postgres_shipping -e POSTGRES_PASSWORD=nopass -e POSTGRES_DB=shipping -d postgres --max_prepared_transactions=100
+
